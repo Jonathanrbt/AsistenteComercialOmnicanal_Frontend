@@ -1,7 +1,5 @@
 # React + TypeScript + Vite
 
-# cd front-end
-
 #  npm install
 
 #  npm run dev
