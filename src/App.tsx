@@ -1,14 +1,13 @@
+import { Routes , Route} from 'react-router-dom'
+import ChatBot from './pages/ChatBot'
 import './App.css'
-import Chat from './components/Chat'
-import History from './components/History'
 
 function App() {
 
   return (
-    <div className='bg-[#101010] text-white min-h-screen flex'>
-        <History/>
-        <Chat/>
-    </div>
+    <Routes>
+      <Route path='/chatbot' element={<ChatBot/>}/>
+    </Routes>
   )
 }
 
