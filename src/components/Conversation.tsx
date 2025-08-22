@@ -1,4 +1,4 @@
-import Message from "./message"
+import Message from "./Message"
 import { Input_search } from "./Input_search"
 
 export default function Conversation() {
