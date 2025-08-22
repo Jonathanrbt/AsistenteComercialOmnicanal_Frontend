@@ -1,14 +1,15 @@
+import { Routes , Route} from 'react-router-dom'
+import ChatBot from './pages/Chatbot'
 import './App.css'
-import Chat from './components/Chat'
-import History from './components/History'
+import AdminPanel from './pages/AdminView'
 
 function App() {
 
   return (
-    <div className='bg-[#101010] text-white min-h-screen flex'>
-        <History/>
-        <Chat/>
-    </div>
+    <Routes>
+      <Route path='/chatbot' element={<ChatBot/>}/>
+      <Route path='/admin' element={<AdminPanel/>}/>
+    </Routes>
   )
 }
 
