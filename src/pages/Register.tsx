@@ -14,10 +14,9 @@ export default function Register() {
     }
 
     const formData = {
-      full_name: fullName,
-      email_address: email,
+      name: fullName,
+      email: email,
       password: password,
-      channel: "web",
       role: role,
     };
 
