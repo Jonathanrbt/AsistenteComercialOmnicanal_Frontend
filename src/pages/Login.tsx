@@ -40,7 +40,6 @@ export default function LoginPage() {
     <div className="min-h-screen bg-gray-900 flex items-center justify-center">
       <div className="bg-gray-800 p-8 rounded-lg shadow-md w-full max-w-sm">
         <h2 className="text-2xl font-bold text-white mb-6 text-center">Iniciar sesión</h2>
-
         <div className="mb-4">
           <label className="block text-gray-300 mb-1">Correo electrónico</label>
           <input
@@ -51,7 +50,6 @@ export default function LoginPage() {
             placeholder="ejemplo@correo.com"
           />
         </div>
-
         <div className="mb-6">
           <label className="block text-gray-300 mb-1">Contraseña</label>
           <input
@@ -62,7 +60,6 @@ export default function LoginPage() {
             placeholder="••••••••"
           />
         </div>
-
         <button
           onClick={handleLogin}
           className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition-colors"
