@@ -5,11 +5,11 @@ import { useState } from "react";
 export default function Chat() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<{ isBot: boolean; text: string }[]>([
-    { isBot: true, text: "Hola, ¿cómo estás?" },
-    {
-      isBot: false,
-      text: "Hola, estoy buscando una cotización para una cena familiar",
-    },
+    // { isBot: true, text: "Hola, ¿cómo estás?" },
+    // {
+    //   isBot: false,
+    //   text: "Hola, estoy buscando una cotización para una cena familiar",
+    // },
   ]);
   const [isLoading, setIsLoading] = useState(false);
   
