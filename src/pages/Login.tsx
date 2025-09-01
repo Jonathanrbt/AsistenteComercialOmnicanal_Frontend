@@ -40,11 +40,9 @@ export default function LoginPage() {
 
         console.log("👤 Usuario:", user);
 
-        if (user.role === "admin") {
-          navigate("/admin");
-        } else {
+  
           navigate("/chatbot");
-        }
+      
       } catch (error) {
         console.error("❌ Error al buscar el usuario:", error);
       }

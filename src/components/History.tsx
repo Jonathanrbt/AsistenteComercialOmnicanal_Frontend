@@ -1,18 +1,28 @@
 import PreviousChat from "./PreviousChat";
 
-export default function History() {
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  role: string;
+}
+
+export default function History(props: {userData: User[], setUserId: React.Dispatch<React.SetStateAction<number | null>>;
+}) {
+  console.log(props.userData);
+
   return (
-    // Con h-full lo usamos para que el componente ocupe toda la altura de nuestra pagina , que es chatbot.
-    // Con over-flow que es para que el contenido se desplace dentro de este contenedor
     <aside className="w-[25%] bg-[#181818] p-4 border-r border-gray-700 flex flex-col h-full overflow-y-auto">
       <h2 className="text-lg font-semibold mb-4">Chats</h2>
       <ul className="space-y-2">
-        <PreviousChat>
-          reunion familiar
-        </PreviousChat>
-        <PreviousChat>
-          Celebracion en pareja
-        </PreviousChat>
+        {props.userData.map((user, index) => {
+          const userName = user.name.split(" ")
+          return(
+          <PreviousChat key={index} onClick={() => {props.setUserId(user.id)}}>
+            {userName[0]}
+          </PreviousChat>
+          )
+        })}
       </ul>
     </aside>
   );
