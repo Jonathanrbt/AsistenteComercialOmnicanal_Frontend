@@ -3,7 +3,7 @@ import Conversation from "./Conversation"
 
 
 
-export default function Chat(props: {userId: number}) {
+export default function Chat(props: {userId: number | null}) {
 
     const [chats, setChats] = useState([])
 useEffect(() => {
@@ -21,11 +21,12 @@ useEffect(() => {
   };
 
   if (props.userId) {
-    fetchData(); // Solo si hay un ID válido
+    fetchData(); 
   }
-}, [props.userId]); // ← Aquí está la clave
+}, [props.userId]);
 
-  console.log(chats);
+
+
   return (
     <main className="w-[70%] p-6 flex flex-col justify-end space-y-4">
          <Conversation Chats={chats.messages}/>
