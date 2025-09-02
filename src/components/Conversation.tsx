@@ -15,6 +15,7 @@ export default function Chat(props: { Chats: Chat[] }) {
   useEffect(() => {
     if (bottomRef.current) {
       bottomRef.current.scrollIntoView({ behavior: "smooth" });
+
     }
   }, [props.Chats]);
 

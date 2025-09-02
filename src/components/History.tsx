@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef, useCallback } from 'react';
 import PreviousChat from "./PreviousChat";
 
 interface User {
@@ -26,4 +27,5 @@ export default function History(props: {userData: User[], setUserId: React.Dispa
       </ul>
     </aside>
   );
+
 }
