@@ -97,6 +97,7 @@ export default function Register() {
         >
           Register
         </button>
+        <a href="http://localhost:5173/login" className="block mt-4 text-blue-500 underline hover:text-blue-400 text-center">Iniciar Sesión</a>
       </div>
     </div>
   );
