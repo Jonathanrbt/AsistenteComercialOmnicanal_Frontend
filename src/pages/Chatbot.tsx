@@ -8,7 +8,7 @@ export default function ChatBot() {
   const [userID, setUserID] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
   
-   useEffect(() => {
+  useEffect(() => {
   const fetchData = async () => {
     try {
       const token = sessionStorage.getItem("token"); // ← Aquí obtienes el valor real

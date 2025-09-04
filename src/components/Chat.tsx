@@ -28,7 +28,7 @@ useEffect(() => {
 
 
   return (
-    <main className="w-[70%] p-6 flex flex-col justify-end space-y-4">
+    <main className="w-full flex flex-col">
          <Conversation Chats={chats.messages}/>
     </main>
   )

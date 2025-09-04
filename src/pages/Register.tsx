@@ -93,7 +93,7 @@ export default function Register() {
         </div>
         <button
           onClick={handleRegister}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition-colors"
+          className="w-full bg-blue-900 hover:bg-blue-950 text-white font-semibold py-2 rounded transition-colors"
         >
           Register
         </button>
