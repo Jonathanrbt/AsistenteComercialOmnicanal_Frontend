@@ -37,7 +37,8 @@ export default function ChatBot() {
     if (loading) return <p>Cargando datos...</p>;
   
   return (
-    <div className='bg-[#101010] text-white flex h-screen'>
+    <div className='text-white flex h-screen bg-gray-900'
+    style={{backgroundImage: "url('/chat-imagen.png')", backgroundSize: "cover", backgroundRepeat: "repeat" }}>
       <History userData = {users} setUserId={setUserID}/>
       <Chat userId = {userID}/>
     </div>
