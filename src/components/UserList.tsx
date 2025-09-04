@@ -23,7 +23,7 @@ export default function UserList({ users, selectedUserId, onSelect }: Props) {
             selectedUserId === user.id ? "bg-gray-700" : ""
           }`}
         >
-           
+
           {user.name}
           <span className="text-sm text-gray-400"> {user.chats.length} mensajes • hace {user.timeLastMessage}h</span>
 
