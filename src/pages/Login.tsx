@@ -84,6 +84,7 @@ export default function LoginPage() {
         >
           Entrar
         </button>
+        <a href="http://localhost:5173/register" className="block mt-4 text-blue-500 underline hover:text-blue-400 text-center">Registrar Usuario</a>
       </div>
     </div>
   );
